@@ -1,16 +1,13 @@
 var express = require('express');
 var router = express.Router();
-var Skill_M = require('../models/skill_M');
+var skillsCtrl = require('../controllers/skills_C')
 
 /* GET users listing. */
 // router.get('/', function(req, res, next) {
 //   res.send('respond with a resource');
 // });
 
-router.get('/', function(req, res) { // Catch home request
-  res.render('skills_V/index', {
-    skills: Skill_M.getAll()
-  });
-});
+router.get('/', skillsCtrl.index);
+router.get('/:id', skillsCtrl.show);
 
 module.exports = router;
