@@ -16,3 +16,4 @@ const skills = [
   function getOne(id) {
       return skills[id];
   }
+  

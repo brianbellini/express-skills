@@ -1,19 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Express Skills</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+  <title>Express Skills</title>
+  <%- include('../header') %>
 </head>
 <body>
-    <h1>Skills</h1>
-    <ul>
-      <% skills.forEach(function(s, idx) { %>
-        <li>
-          <a href="/skills/<%= idx %>"><%= s.skill %></a>
-        </li>
-      <% }); %>
-    </ul>
+  <table>
+    <thead>
+        <tr>
+            <th colspan='2'>MY DEVELOPER SKILLS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+        </tr>
+        <% skills.forEach(function(s, idx) { %>
+          <tr>
+            <td><a href="/skills/<%= idx %>"><%= s.skill %></a></td>
+          </tr>
+        <% }); %>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td id="input-cell"><input id="input-box" type="text" id="new-skill"></td>
+            <td id="button-cell"><button id="add-button">ADD SKILL</button></td>
+        </tr>
+    </tfoot>
+    </table>
   </body>
 </html>

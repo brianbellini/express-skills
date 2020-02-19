@@ -1,8 +1,78 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+:root {
+  --header-bg-color: #9DC284;
+  --skill-text-color: #F5AD4F;
+  --remove-button-color: #D36D6A;
+  --outline-color: #9DC284;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-weight: bold;   
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  min-height: 30%;
+  grid-area: 2 / 2;
+  line-height: 40px;
+
+  
+}
+
+thead {
+  background-color: var(--header-bg-color);
+  color: white;
+  height: 50px;
+
+}
+
+tbody button {
+  background-color: var(--remove-button-color);
+  color: white;
+  margin: 10px;
+  text-align: center;
+  vertical-align: top;
+  padding: 3px 6px;
+
+}
+
+tbody td {
+  
+  color: var(--skill-text-color);
+}
+
+
+#button-cell {
+  text-align: right;
+}
+
+#add-button, input{
+  border: 3px solid var(--outline-color);
+  color: var(--outline-color);
+  font-weight: bold;
+  padding: 5%;
+}
+
+#input-box {
+  width: 140%;
+  line-height: 100%;
 }
