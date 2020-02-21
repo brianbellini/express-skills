@@ -52,7 +52,10 @@ tbody button {
   text-align: center;
   vertical-align: top;
   padding: 3px 6px;
+}
 
+#delete-button {
+  display: inline-block;
 }
 
 tbody td {
