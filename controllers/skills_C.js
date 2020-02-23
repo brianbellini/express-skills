@@ -1,6 +1,7 @@
 module.exports = {
     index,
     show,
+    delete: deleteSkill,
 };
 
 var Skill_M = require('../models/skill_M');
@@ -16,4 +17,8 @@ function show(req, res) {
         skill: Skill_M.getOne(req.params.id),
         skillNum: parseInt(req.params.id) + 1
     });
+}
+
+function deleteSkill(req, res) {
+  
 }
