@@ -21,8 +21,6 @@ const skills = [
   
 
 function deleteOne(id) {
-  console.log(id)
-  console.log('Should delete: ' + skills[id]);
   skills.splice(id, 1);
 }
 
