@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Skill</title>
+    <%- include('../header') %>
+</head>
+<body>
+    <table>
+      <thead>
+          <tr>
+              <th colspan='2'>Skill <%= skillNum%></th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td></td>
+          </tr>
+
+            <tr>
+              <td><form action="/skills/<%= skillNum %>?_method=DELETE"
+                class="delete-form" method="POST">
+                <button type="submit">X</button>
+                </form>
+                <%=skill.skill %>
+              </td>
+            </tr>
+          <tr>
+          </tr>
+          <tr>
+          </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+              <td><input disabled class="disabled" id="input-box" type="text" name="skill"></td>
+              <td id="button-cell"><button id="add-button">EDIT SKILL</button></td>
+          </tr>
+      </tfoot>
+      </table>
+  </body>
+</html>
