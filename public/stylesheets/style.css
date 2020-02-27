@@ -88,5 +88,6 @@ tbody td {
 }
 
 .disabled {
-  background-color: var(--header-bg-color);
+  background-color: white;
+  border-color: white;;
 }
